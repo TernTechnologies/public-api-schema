@@ -331,7 +331,9 @@
         }
     },
     "required": [
-        "First_Name", "Profession", "id",
+        "First_Name",
+        "Profession",
+        "id",
         "Email",
         "Gender",
         "Mobile",
