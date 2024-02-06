@@ -1,4 +1,4 @@
-name: Continuous Integration
+name: prettier-check
 
 # This action works with pull requests and pushes on the main branch
 on:
@@ -19,6 +19,7 @@ jobs:
         uses: rutajdash/prettier-cli-action@v1.0.0
         with:
           config_path: ./.prettierrc.yml
+          fail_on_error: true
 
       # This step only runs if prettier finds errors causing the previous step to fail
       # This steps lists the files where errors were found
