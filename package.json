@@ -1,0 +1,13 @@
+{
+  "name": "public-api-schema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prettier:format": "prettier --write \"**/*.{ts,tsx,js,md,mdx,css,yaml}\"",
+    "prettier:check:ci": "prettier --check \"**/*.{ts,tsx,js,md,mdx,css,yaml}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
