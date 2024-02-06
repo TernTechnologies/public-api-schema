@@ -11,6 +11,7 @@ The base URL for accessing the API is `https://push.tern-group.com`
 The API expects and returns data in JSON format. Below is the JSON schema representing the candidate data structure.
 
 [Candidate JSON Schema](candidate-schema.json)
+[Example Candidate JSON](../../example/candidate/example-candidate.json)
 
 ## Endpoints
 
