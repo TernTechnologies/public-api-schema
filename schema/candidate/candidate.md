@@ -6,7 +6,11 @@ This API documentation provides details about the endpoints and data structures 
 
 ### Base URL
 
-The base URL for accessing the API is `https://push.tern-group.com`
+The base URL for accessing the production API is `https://push.tern-group.com`
+The base URL for accessing the development API is `https://push.dev.tern-group.com`
+
+The API is accessible over HTTPS.
+The default resource path for the API is `/crm-events`.
 
 ### JSON Schema
 
