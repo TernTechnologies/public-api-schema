@@ -14,6 +14,9 @@
         "Mobile": {
             "type": "string"
         },
+        "Resume": {
+            "type": "string"
+        },
         "Alternate_Number": {
             "type": "string"
         },
@@ -340,6 +343,7 @@
         "id",
         "Email",
         "Gender",
+        "Resume",
         "Mobile",
         "Origin",
         "Source",
