@@ -5,6 +5,7 @@
     "Mobile": "1234567890",
     "Alternate_Number": "0987654321",
     "Email": "john.doe@example.com",
+    "Resume": "s3://repolinkt.aws.com/resume-one.pdf",
     "Date_of_Birth": "1990-01-01",
     "Industry": "Technology",
     "Profession": "Software Engineer",
