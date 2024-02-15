@@ -2,6 +2,9 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
     "properties": {
+        "Alternate_ID": {
+            "type": "string"
+        },
         "First_Name": {
             "type": "string"
         },
@@ -9,6 +12,9 @@
             "type": "string"
         },
         "Mobile": {
+            "type": "string"
+        },
+        "Resume": {
             "type": "string"
         },
         "Alternate_Number": {
@@ -331,9 +337,13 @@
         }
     },
     "required": [
+        "Alternate_ID",
+        "First_Name",
+        "Profession",
         "id",
         "Email",
         "Gender",
+        "Resume",
         "Mobile",
         "Origin",
         "Source",

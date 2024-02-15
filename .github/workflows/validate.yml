@@ -22,3 +22,5 @@ jobs:
 
         with:
           comment: "true" # enable comment mode
+          use_gitignore: "true" # enable .gitignore file
+          
