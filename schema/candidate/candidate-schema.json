@@ -2,7 +2,55 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
     "properties": {
+        "Source": {
+            "type": "string"
+        },
+        "Origin": {
+            "type": "string"
+        },
         "Alternate_ID": {
+            "type": "string"
+        },
+        "Notice_Period": {
+            "type": "string"
+        },
+        "Country_Preference": {
+            "type": "array"
+        },
+        "City_Location_Preference": {
+            "type": "string"
+        },
+        "Role_Preference": {
+            "type": "array"
+        },
+        "Dependants_Relocation": {
+            "type": "string"
+        },
+        "Other_Comments": {
+            "type": "string"
+        },
+        "Royal_College_Membership_Status": {
+            "type": "string"
+        },
+        "PLAB_Exam_Status": {
+            "type": "string"
+        },
+        "GMC_PIN_Issuance_Date": {
+            "type": "string"
+        },
+        "GMC_PIN_Expiration_Date": {
+            "type": "string"
+        },
+        "GMC_Registration_Expected_Date": {
+            "type": "string"
+        },
+        "GMC_PIN": {
+            "type": "number"
+        },
+        "Other_GMC_Pathway_Status": {
+            "type": "string"
+        },
+        "GMC_Registration": {
             "type": "string"
         },
         "First_Name": {
@@ -12,7 +60,8 @@
             "type": "string"
         },
         "Mobile": {
-            "type": "string"
+            "type": "string",
+            "format": "phonenumber"
         },
         "Resume": {
             "type": "string"
@@ -21,7 +70,8 @@
             "type": "string"
         },
         "Email": {
-            "type": "string"
+            "type": "string",
+            "format": "email"
         },
         "Date_of_Birth": {
             "type": "string"
@@ -42,13 +92,14 @@
             "type": "string"
         },
         "Gender": {
-            "type": "string"
+            "type": "string",
+            "enum": ["Male", "Female", "Other", "Not disclosed"]
         },
         "About_Me": {
             "type": "string"
         },
         "Languages_Known": {
-            "type": "string"
+            "type": "array"
         },
         "Years_Of_Experience": {
             "type": "string"
@@ -95,7 +146,15 @@
                         "type": "string"
                     },
                     "Work_Duration": {
-                        "type": "string"
+                        "type": "object",
+                        "properties": {
+                            "from": {
+                                "type": "string"
+                            },
+                            "to": {
+                                "type": "string"
+                            }
+                        }
                     }
                 },
                 "required": [
@@ -125,7 +184,15 @@
                         "type": "string"
                     },
                     "Duration": {
-                        "type": "string"
+                        "type": "object",
+                        "properties": {
+                            "from": {
+                                "type": "string"
+                            },
+                            "to": {
+                                "type": "string"
+                            }
+                        }
                     }
                 },
                 "required": [
@@ -167,26 +234,34 @@
                 ]
             }
         },
+        "IELTS_Exam_Status": {
+            "type": "string",
+            "enum": ["Registered", "Completed"]
+        },
         "IELTS_Score_Date": {
             "type": "string"
         },
         "IELTS_Score_Listening": {
-            "type": "number"
+            "type": "string"
         },
         "IELTS_Score_Reading": {
-            "type": "number"
+            "type": "string"
         },
         "IELTS_Score_Writing": {
-            "type": "number"
+            "type": "string"
         },
         "IELTS_Score_Speaking": {
-            "type": "number"
+            "type": "string"
         },
         "IELTS_Score_Overall": {
-            "type": "number"
+            "type": "string"
         },
         "OET_Score_Date": {
             "type": "string"
+        },
+        "OET_1_Exam_Status": {
+            "type": "string",
+            "enum": ["Registered", "Completed"]
         },
         "OET_1_Score_Listening_Latest": {
             "type": "number"
@@ -216,10 +291,7 @@
             "type": "number"
         },
         "INC_Registration_Status": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
+            "type": "string"
         },
         "INC_Registration_Number": {
             "type": "string"
@@ -237,10 +309,7 @@
             }
         },
         "State_Nursing_Registration_Board": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
+            "type": "string"
         },
         "State_Nursing_Registration_Number": {
             "type": "string"
@@ -252,10 +321,7 @@
             "type": "string"
         },
         "MCI_Registration_Status": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
+            "type": "string"
         },
         "MCI_Registration_Number": {
             "type": "string"
@@ -282,21 +348,18 @@
             "type": "string"
         },
         "NMC_Registration_Status": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
+            "type": "string"
         },
-        "NMC_Personal_Reference_Number": {
+        "NMC_Personal_Reference_Number_PRN": {
             "type": "number"
         },
-        "NMC_PIN_Issuance_Date": {
+        "NMC_Registration_Issuance_Date": {
             "type": "string"
         },
-        "NMC_PIN_Expiry_Date": {
+        "NMC_Registration_Expiry_Date": {
             "type": "string"
         },
-        "NMC_Pin": {
+        "NMC_Registration_Number": {
             "type": "string"
         },
         "CBT_Status": {
@@ -306,56 +369,36 @@
             }
         },
         "CBT_Type": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
+            "type": "string"
         },
         "CBT_Date": {
             "type": "string"
         },
         "OSCE_Status": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
+            "type": "string"
         },
         "OSCE_Date": {
             "type": "string"
         },
         "GMC_Pathway_Applicable": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
+            "type": "string"
         },
         "Royal_College_Exam_Given": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
+            "type": "string"
         }
     },
     "required": [
         "Alternate_ID",
         "First_Name",
         "Profession",
-        "id",
         "Email",
-        "Gender",
-        "Resume",
         "Mobile",
-        "Origin",
         "Source",
-        "About_Me",
-        "CBT_Type",
+        "Origin",
         "Industry",
         "Full_Name",
         "Last_Name",
-        "Skill_Set",
-        "Candidate_ID",
         "New_Substage",
-        "Candidate_Internal_Stage",
-        "Criminal_Background_Check"
+        "Candidate_Internal_Stage"
     ]
 }
