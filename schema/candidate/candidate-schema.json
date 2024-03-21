@@ -390,12 +390,9 @@
     "required": [
         "Alternate_ID",
         "First_Name",
-        "Profession",
-        "Email",
         "Mobile",
         "Source",
         "Origin",
-        "Industry",
         "Full_Name",
         "Last_Name",
         "New_Substage",
