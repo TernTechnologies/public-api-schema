@@ -1,412 +1,401 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "properties": {
-    "Source": {
-      "type": "string"
-    },
-    "Origin": {
-      "type": "string"
-    },
-    "Alternate_ID": {
-      "type": "string"
-    },
-    "Notice_Period": {
-      "type": "string"
-    },
-    "Country_Preference": {
-      "type": "array"
-    },
-    "City_Location_Preference": {
-      "type": "string"
-    },
-    "Role_Preference": {
-      "type": "array"
-    },
-    "Dependants_Relocation": {
-      "type": "string"
-    },
-    "Other_Comments": {
-      "type": "string"
-    },
-    "Royal_College_Membership_Status": {
-      "type": "string"
-    },
-    "PLAB_Exam_Status": {
-      "type": "string"
-    },
-    "GMC_PIN_Issuance_Date": {
-      "type": "string"
-    },
-    "GMC_PIN_Expiration_Date": {
-      "type": "string"
-    },
-    "GMC_Registration_Expected_Date": {
-      "type": "string"
-    },
-    "GMC_PIN": {
-      "type": "number"
-    },
-    "Other_GMC_Pathway_Status": {
-      "type": "string"
-    },
-    "GMC_Registration": {
-      "type": "string"
-    },
-    "First_Name": {
-      "type": "string"
-    },
-    "Last_Name": {
-      "type": "string"
-    },
-    "Mobile": {
-      "type": "string",
-      "format": "phonenumber"
-    },
-    "Resume": {
-      "type": "string"
-    },
-    "Alternate_Number": {
-      "type": "string"
-    },
-    "Email": {
-      "type": "string",
-      "format": "email"
-    },
-    "Date_of_Birth": {
-      "type": "string"
-    },
-    "Industry": {
-      "type": "string"
-    },
-    "Profession": {
-      "type": "string"
-    },
-    "Candidate_Internal_Stage": {
-      "type": "string"
-    },
-    "New_Substage": {
-      "type": "string"
-    },
-    "Marital_Status": {
-      "type": "string"
-    },
-    "Gender": {
-      "type": "string",
-      "enum": [
-        "Male",
-        "Female",
-        "Other",
-        "Not disclosed"
-      ]
-    },
-    "About_Me": {
-      "type": "string"
-    },
-    "Languages_Known": {
-      "type": "array"
-    },
-    "Years_Of_Experience": {
-      "type": "string"
-    },
-    "Skill_Set": {
-      "type": "string"
-    },
-    "Current_Job_Title": {
-      "type": "string"
-    },
-    "Driving_License_Status": {
-      "type": "string"
-    },
-    "Street": {
-      "type": "string"
-    },
-    "State": {
-      "type": "string"
-    },
-    "Country": {
-      "type": "string"
-    },
-    "City": {
-      "type": "string"
-    },
-    "Zip_Code": {
-      "type": "string"
-    },
-    "Experience_Details": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "Company": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "Source": {
             "type": "string"
-          },
-          "Occupation/Title": {
+        },
+        "Origin": {
             "type": "string"
-          },
-          "Department": {
+        },
+        "Alternate_ID": {
             "type": "string"
-          },
-          "Summary": {
+        },
+        "Notice_Period": {
             "type": "string"
-          },
-          "Work_Duration": {
-            "type": "object",
-            "properties": {
-              "from": {
-                "type": "string"
-              },
-              "to": {
-                "type": "string"
-              }
+        },
+        "Country_Preference": {
+            "type": "array"
+        },
+        "City_Location_Preference": {
+            "type": "string"
+        },
+        "Role_Preference": {
+            "type": "array"
+        },
+        "Dependants_Relocation": {
+            "type": "string"
+        },
+        "Other_Comments": {
+            "type": "string"
+        },
+        "Royal_College_Membership_Status": {
+            "type": "string"
+        },
+        "PLAB_Exam_Status": {
+            "type": "string"
+        },
+        "GMC_PIN_Issuance_Date": {
+            "type": "string"
+        },
+        "GMC_PIN_Expiration_Date": {
+            "type": "string"
+        },
+        "GMC_Registration_Expected_Date": {
+            "type": "string"
+        },
+        "GMC_PIN": {
+            "type": "number"
+        },
+        "Other_GMC_Pathway_Status": {
+            "type": "string"
+        },
+        "GMC_Registration": {
+            "type": "string"
+        },
+        "First_Name": {
+            "type": "string"
+        },
+        "Last_Name": {
+            "type": "string"
+        },
+        "Mobile": {
+            "type": "string",
+            "format": "phonenumber"
+        },
+        "Resume": {
+            "type": "string"
+        },
+        "Alternate_Number": {
+            "type": "string"
+        },
+        "Email": {
+            "type": "string",
+            "format": "email"
+        },
+        "Date_of_Birth": {
+            "type": "string"
+        },
+        "Industry": {
+            "type": "string"
+        },
+        "Profession": {
+            "type": "string"
+        },
+        "Candidate_Internal_Stage": {
+            "type": "string"
+        },
+        "New_Substage": {
+            "type": "string"
+        },
+        "Marital_Status": {
+            "type": "string"
+        },
+        "Gender": {
+            "type": "string",
+            "enum": ["Male", "Female", "Other", "Not disclosed"]
+        },
+        "About_Me": {
+            "type": "string"
+        },
+        "Languages_Known": {
+            "type": "array"
+        },
+        "Years_Of_Experience": {
+            "type": "string"
+        },
+        "Skill_Set": {
+            "type": "string"
+        },
+        "Current_Job_Title": {
+            "type": "string"
+        },
+        "Driving_License_Status": {
+            "type": "string"
+        },
+        "Street": {
+            "type": "string"
+        },
+        "State": {
+            "type": "string"
+        },
+        "Country": {
+            "type": "string"
+        },
+        "City": {
+            "type": "string"
+        },
+        "Zip_Code": {
+            "type": "string"
+        },
+        "Experience_Details": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Company": {
+                        "type": "string"
+                    },
+                    "Occupation/Title": {
+                        "type": "string"
+                    },
+                    "Department": {
+                        "type": "string"
+                    },
+                    "Summary": {
+                        "type": "string"
+                    },
+                    "Work_Duration": {
+                        "type": "object",
+                        "properties": {
+                            "from": {
+                                "type": "string"
+                            },
+                            "to": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "required": [
+                    "Company",
+                    "Occupation/Title",
+                    "Department",
+                    "Summary",
+                    "Work_Duration"
+                ]
             }
-          }
         },
-        "required": [
-          "Company",
-          "Occupation/Title",
-          "Department",
-          "Summary",
-          "Work_Duration"
-        ]
-      }
-    },
-    "Education_Details": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "Degree": {
-            "type": "string"
-          },
-          "Institute/School": {
-            "type": "string"
-          },
-          "University": {
-            "type": "string"
-          },
-          "Major/Dept": {
-            "type": "string"
-          },
-          "Duration": {
-            "type": "object",
-            "properties": {
-              "from": {
-                "type": "string"
-              },
-              "to": {
-                "type": "string"
-              }
+        "Education_Details": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Degree": {
+                        "type": "string"
+                    },
+                    "Institute/School": {
+                        "type": "string"
+                    },
+                    "University": {
+                        "type": "string"
+                    },
+                    "Major/Dept": {
+                        "type": "string"
+                    },
+                    "Duration": {
+                        "type": "object",
+                        "properties": {
+                            "from": {
+                                "type": "string"
+                            },
+                            "to": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "required": [
+                    "Degree",
+                    "Institute/School",
+                    "University",
+                    "Major/Dept",
+                    "Duration"
+                ]
             }
-          }
         },
-        "required": [
-          "Degree",
-          "Institute/School",
-          "University",
-          "Major/Dept",
-          "Duration"
-        ]
-      }
-    },
-    "References": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "Label1": {
-            "type": "string"
-          },
-          "Label2": {
-            "type": "string"
-          },
-          "Reference_Organization": {
-            "type": "string"
-          },
-          "Reference_Number": {
-            "type": "string"
-          },
-          "Reference_Email_ID": {
-            "type": "string"
-          }
+        "References": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Label1": {
+                        "type": "string"
+                    },
+                    "Label2": {
+                        "type": "string"
+                    },
+                    "Reference_Organization": {
+                        "type": "string"
+                    },
+                    "Reference_Number": {
+                        "type": "string"
+                    },
+                    "Reference_Email_ID": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "Label1",
+                    "Label2",
+                    "Reference_Organization",
+                    "Reference_Number",
+                    "Reference_Email_ID"
+                ]
+            }
         },
-        "required": [
-          "Label1",
-          "Label2",
-          "Reference_Organization",
-          "Reference_Number",
-          "Reference_Email_ID"
-        ]
-      }
+        "IELTS_Exam_Status": {
+            "type": "string",
+            "enum": ["Registered", "Completed"]
+        },
+        "IELTS_Score_Date": {
+            "type": "string"
+        },
+        "IELTS_Score_Listening": {
+            "type": "string"
+        },
+        "IELTS_Score_Reading": {
+            "type": "string"
+        },
+        "IELTS_Score_Writing": {
+            "type": "string"
+        },
+        "IELTS_Score_Speaking": {
+            "type": "string"
+        },
+        "IELTS_Score_Overall": {
+            "type": "string"
+        },
+        "OET_Score_Date": {
+            "type": "string"
+        },
+        "OET_1_Exam_Status": {
+            "type": "string",
+            "enum": ["Registered", "Completed"]
+        },
+        "OET_1_Score_Listening_Latest": {
+            "type": "number"
+        },
+        "OET_1_Score_Reading_Latest": {
+            "type": "number"
+        },
+        "OET_1_Score_Writing_Latest": {
+            "type": "number"
+        },
+        "OET_1_Score_Speaking_Latest": {
+            "type": "number"
+        },
+        "OET_2_Test_Date": {
+            "type": "string"
+        },
+        "OET_2_Score_Listening": {
+            "type": "number"
+        },
+        "OET_2_Score_Reading": {
+            "type": "number"
+        },
+        "OET_2_Score_Writing": {
+            "type": "number"
+        },
+        "OET_2_Score_Speaking": {
+            "type": "number"
+        },
+        "INC_Registration_Status": {
+            "type": "string"
+        },
+        "INC_Registration_Number": {
+            "type": "string"
+        },
+        "INC_Registration_Issuance_Date": {
+            "type": "string"
+        },
+        "INC_Registration_Expiration_Date": {
+            "type": "string"
+        },
+        "State_Nursing_Registration_Status": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "State_Nursing_Registration_Board": {
+            "type": "string"
+        },
+        "State_Nursing_Registration_Number": {
+            "type": "string"
+        },
+        "State_Nursing_Registration_Issuance_Date": {
+            "type": "string"
+        },
+        "State_Nursing_Registration_Expiration_Date": {
+            "type": "string"
+        },
+        "MCI_Registration_Status": {
+            "type": "string"
+        },
+        "MCI_Registration_Number": {
+            "type": "string"
+        },
+        "MCI_Registration_Issuance_Date": {
+            "type": "string"
+        },
+        "MCI_Registration_Expiration_Date": {
+            "type": "string"
+        },
+        "Publications": {
+            "type": "string"
+        },
+        "Workshops_Conferences_Attended": {
+            "type": "string"
+        },
+        "Clinical_Experience": {
+            "type": "string"
+        },
+        "Academic_Achievements": {
+            "type": "string"
+        },
+        "Professional_Memberships_Medical_License": {
+            "type": "string"
+        },
+        "NMC_Registration_Status": {
+            "type": "string"
+        },
+        "NMC_Personal_Reference_Number_PRN": {
+            "type": "number"
+        },
+        "NMC_Registration_Issuance_Date": {
+            "type": "string"
+        },
+        "NMC_Registration_Expiry_Date": {
+            "type": "string"
+        },
+        "NMC_Registration_Number": {
+            "type": "string"
+        },
+        "CBT_Status": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "CBT_Type": {
+            "type": "string"
+        },
+        "CBT_Date": {
+            "type": "string"
+        },
+        "OSCE_Status": {
+            "type": "string"
+        },
+        "OSCE_Date": {
+            "type": "string"
+        },
+        "GMC_Pathway_Applicable": {
+            "type": "string"
+        },
+        "Royal_College_Exam_Given": {
+            "type": "string"
+        }
     },
-    "IELTS_Exam_Status": {
-      "type": "string",
-      "enum": [
-        "Registered",
-        "Completed"
-      ]
-    },
-    "IELTS_Score_Date": {
-      "type": "string"
-    },
-    "IELTS_Score_Listening": {
-      "type": "string"
-    },
-    "IELTS_Score_Reading": {
-      "type": "string"
-    },
-    "IELTS_Score_Writing": {
-      "type": "string"
-    },
-    "IELTS_Score_Speaking": {
-      "type": "string"
-    },
-    "IELTS_Score_Overall": {
-      "type": "string"
-    },
-    "OET_Score_Date": {
-      "type": "string"
-    },
-    "OET_1_Exam_Status": {
-      "type": "string",
-      "enum": [
-        "Registered",
-        "Completed"
-      ]
-    },
-    "OET_1_Score_Listening_Latest": {
-      "type": "number"
-    },
-    "OET_1_Score_Reading_Latest": {
-      "type": "number"
-    },
-    "OET_1_Score_Writing_Latest": {
-      "type": "number"
-    },
-    "OET_1_Score_Speaking_Latest": {
-      "type": "number"
-    },
-    "OET_2_Test_Date": {
-      "type": "string"
-    },
-    "OET_2_Score_Listening": {
-      "type": "number"
-    },
-    "OET_2_Score_Reading": {
-      "type": "number"
-    },
-    "OET_2_Score_Writing": {
-      "type": "number"
-    },
-    "OET_2_Score_Speaking": {
-      "type": "number"
-    },
-    "INC_Registration_Status": {
-      "type": "string"
-    },
-    "INC_Registration_Number": {
-      "type": "string"
-    },
-    "INC_Registration_Issuance_Date": {
-      "type": "string"
-    },
-    "INC_Registration_Expiration_Date": {
-      "type": "string"
-    },
-    "State_Nursing_Registration_Status": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "State_Nursing_Registration_Board": {
-      "type": "string"
-    },
-    "State_Nursing_Registration_Number": {
-      "type": "string"
-    },
-    "State_Nursing_Registration_Issuance_Date": {
-      "type": "string"
-    },
-    "State_Nursing_Registration_Expiration_Date": {
-      "type": "string"
-    },
-    "MCI_Registration_Status": {
-      "type": "string"
-    },
-    "MCI_Registration_Number": {
-      "type": "string"
-    },
-    "MCI_Registration_Issuance_Date": {
-      "type": "string"
-    },
-    "MCI_Registration_Expiration_Date": {
-      "type": "string"
-    },
-    "Publications": {
-      "type": "string"
-    },
-    "Workshops_Conferences_Attended": {
-      "type": "string"
-    },
-    "Clinical_Experience": {
-      "type": "string"
-    },
-    "Academic_Achievements": {
-      "type": "string"
-    },
-    "Professional_Memberships_Medical_License": {
-      "type": "string"
-    },
-    "NMC_Registration_Status": {
-      "type": "string"
-    },
-    "NMC_Personal_Reference_Number_PRN": {
-      "type": "number"
-    },
-    "NMC_Registration_Issuance_Date": {
-      "type": "string"
-    },
-    "NMC_Registration_Expiry_Date": {
-      "type": "string"
-    },
-    "NMC_Registration_Number": {
-      "type": "string"
-    },
-    "CBT_Status": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "CBT_Type": {
-      "type": "string"
-    },
-    "CBT_Date": {
-      "type": "string"
-    },
-    "OSCE_Status": {
-      "type": "string"
-    },
-    "OSCE_Date": {
-      "type": "string"
-    },
-    "GMC_Pathway_Applicable": {
-      "type": "string"
-    },
-    "Royal_College_Exam_Given": {
-      "type": "string"
-    }
-  },
-  "required": [
-    "Alternate_ID",
-    "First_Name",
-    "Mobile",
-    "Source",
-    "Origin",
-    "Full_Name",
-    "Last_Name",
-    "New_Substage",
-    "Candidate_Internal_Stage"
-  ]
+    "required": [
+        "Alternate_ID",
+        "First_Name",
+        "Mobile",
+        "Source",
+        "Origin",
+        "Full_Name",
+        "Last_Name",
+        "New_Substage",
+        "Candidate_Internal_Stage"
+    ]
 }
