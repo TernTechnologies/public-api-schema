@@ -104,6 +104,9 @@
         "Years_Of_Experience": {
             "type": "string"
         },
+        "Specialisations": {
+            "type": "array"
+        },
         "Skill_Set": {
             "type": "string"
         },
